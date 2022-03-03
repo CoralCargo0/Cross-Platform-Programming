@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<form action="http://localhost:8080/calculate">
+    <label >Масса 1</label><br>
+    <input type="text" id="weightOfFirst" name="weightOfFirst" th:value="${weightOfFirst}"><br>
+    <label>Скорость 1</label><br>
+    <input type="text" id="speedOfFirst" name="speedOfFirst" th:value="${speedOfFirst}"><br>
+    <label>Масса 2</label><br>
+    <input type="text" id="weightOfSecond" name="weightOfSecond" th:value="${weightOfSecond}"><br>
+    <label >Скорость 2</label><br>
+    <input type="text" id="speedOfSecond" name="speedOfSecond" th:value="${speedOfSecond}"><br>
+    <td th:text="'Скорость после столкновения ' + ${result}">Скорость после столкновения </td><br>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
